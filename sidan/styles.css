@@ -1,0 +1,23 @@
+* {
+    box-sizing: border-box;
+    Margin: 0;
+    Padding: 0;
+}
+
+/*Backgroundimg for entire website*/
+
+body {
+    background-image: url(images/background/background2.jpeg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/*first layer Background*/
+
+#background {
+    width: 80vw;
+    background-color: rgba(0, 0, 0, 0.296);
+    padding: 2vw;
+    margin: 20vh auto;
+    border-radius: 30px;
+}
