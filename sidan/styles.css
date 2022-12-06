@@ -4,12 +4,17 @@
     Padding: 0;
 }
 
-/*Backgroundimg for entire website*/
+/*Background-img for entire website + font*/
 
 body {
     background-image: url(images/background/background2.jpeg);
     background-size: cover;
     background-attachment: fixed;
+    font-family: 'Barlow Condensed';
+    /* color: #ffebd2; */
+    font-weight: bold;
+    list-style: none;
+
 }
 
 /*first layer Background*/
@@ -20,4 +25,136 @@ body {
     padding: 2vw;
     margin: 20vh auto;
     border-radius: 30px;
+}
+
+header>h1 {
+    font-family: 'Bungee Outline';
+    color: #ffebd2;
+    text-shadow: 20px 10px 10px black;
+    line-height: 0.6;
+
+}
+
+nav {
+    display: flex;
+    margin: 5vw 0;
+    justify-content: space-between;
+    text-shadow: 20px 10px 10px #185a70;
+}
+
+nav>div {
+    display: flex;
+    width: 20vw;
+    justify-content: center;
+    padding: 1vw 0;
+    color: #ffebd2;
+    background-color: #185a70;
+    border-radius: 10px;
+    margin: 0px 3px 0px 3px;
+}
+
+nav>.unmarked:hover {
+    background-color: black;
+    color: #185a70;
+    cursor: pointer;
+    border: solid 1px white;
+
+}
+
+.marked {
+    background-color: black;
+    color: #185a70;
+    border: solid 1px white;
+
+}
+
+.best {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    background-color: rgba(0, 0, 0, 0.296);
+    border: solid 1px white;
+    border-radius: 25px;
+    padding: 2vw;
+    margin-bottom: 1vw;
+
+}
+
+.album_data {
+    grid-row: 1 /span 3;
+    grid-column: 1 / span 3;
+    color: #ffebd2;
+    padding-right: 1vw;
+}
+
+.album_data h1 {
+    font-family: 'Bungee Shade';
+    line-height: 0.7;
+}
+
+.album_data h2 {
+    font-family: 'Barlow Semi Condensed';
+    color: #185a70;
+    padding: 2vw 0;
+}
+
+.cover {
+    grid-column: 4 /span 2;
+    position: relative;
+}
+
+.show_not_hover {
+    width: 100%;
+    position: absolute;
+    right: 0;
+    opacity: 1;
+    border-radius: 20px 20px 0 0;
+    transition-property: opacity;
+    transition-duration: 1s;
+}
+
+.show_hover {
+    width: 100%;
+    border-radius: 20px 20px 0 0;
+}
+
+.show_not_hover:hover {
+    opacity: 0;
+    transition-property: opacity;
+    transition-duration: 1s;
+
+}
+
+.song_list {
+    display: flex;
+    grid-column: 4 /span 2;
+    gap: 1vw;
+
+}
+
+.song_list>div {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: #187ebb;
+    color: #fafafa;
+    margin-top: 0.5vw;
+
+}
+
+.song_list>div>ul {
+    list-style: decimal;
+    margin-top: 0;
+}
+
+.song_list>div>h2 {
+    margin-left: 1.5vw;
+    margin-bottom: 0;
+}
+
+.song_list>div:nth-child(1) {
+    border-radius: 0 0 0 20px
+}
+
+.song_list>div:nth-child(2) {
+    border-radius: 0 0 20px 0
 }
