@@ -578,15 +578,16 @@ footer {
 
 /*Phone mode*/
 @media (max-width: 500px) {
-    .background {
+    #background {
         width: 100vw;
         margin: 0;
+        border-radius: 0;
     }
 
     header>h1 {
         font-size: 9vw;
         text-align: center;
-        margin-top: 3vw;
+        margin-top: 4vw;
     }
 
     .best {
@@ -597,14 +598,137 @@ footer {
         font-size: 3vw;
     }
 
-    /*edit this*/
+    .song_list>div>ul {
+        margin-left: 2vw;
+    }
+
+
     #enema_of_the_state .album_data h1,
     #enema_of_the_state .album_data h2 {
-        font-size: 5vw;
+        font-size: 7vw;
     }
 
     #blink_182 .album_data h1,
     #blink_182 .album_data h2 {
-        font-size: 4vw;
+        font-size: 5vw;
     }
+
+    p,
+    h2,
+    ul,
+    footer {
+        font-size: 3vw;
+    }
+
+    .cover {
+        grid-column: 1 / span 3;
+
+
+    }
+
+    .show_not_hover {
+        border-radius: 20px 20px 0px 0px;
+    }
+
+    .show_not_hover:hover {
+        opacity: 1;
+    }
+
+    .song_list {
+        grid-column: 1 / span 3;
+        flex-direction: row;
+    }
+
+    .song_list>div:nth-child(1) {
+        border-radius: 0px 0px 0px 20px;
+    }
+
+    .song_list>div:nth-child(2) {
+        border-radius: 0px 0px 20px 0px;
+    }
+
+    .album_data {
+        grid-row: 3;
+        margin-top: 8vw;
+    }
+
+    .anecdotes {
+        grid-column: 1 /span 3;
+        flex-wrap: wrap;
+
+    }
+
+    /*Enema of the State Phone*/
+
+    #enema_of_the_state .box {
+        height: 50vw;
+    }
+
+    #enema_of_the_state .top_right_90 {
+        order: 1;
+        width: 30%;
+    }
+
+    #enema_of_the_state .bottom_left_90 {
+        order: 2;
+        width: 68%;
+    }
+
+    #enema_of_the_state .empty {
+        order: 3;
+        width: 30%;
+    }
+
+    #enema_of_the_state .image {
+        order: 5;
+        width: 32%;
+    }
+
+    #enema_of_the_state .bottom_right_90 {
+        order: 6;
+        width: 35%;
+    }
+
+    #enema_of_the_state .tablet_empty_1 {
+        display: none;
+    }
+
+    #enema_of_the_state .phone_empty_1 {
+        display: none;
+    }
+
+    /*Untitled Phone*/
+
+    #blink_182 .box {
+        height: 50vw;
+    }
+
+    #blink_182 .bottom_left_90 {
+        order: 1;
+        width: 62%;
+    }
+
+    #blink_182 .top_left_90 {
+        order: 2;
+        width: 37%;
+    }
+
+    #blink_182 .image {
+        order: 5;
+        width: 62%;
+    }
+
+    #blink_182 .bottom_right_90 {
+        order: 6;
+        width: 37%;
+    }
+
+    #blink_182 .tablet_empty_2 {
+        display: none;
+    }
+
+    #blink_182 .phone_empty_2 {
+        display: none;
+    }
+
 }
