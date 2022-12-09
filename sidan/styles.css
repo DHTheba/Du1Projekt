@@ -1,7 +1,7 @@
 * {
     box-sizing: border-box;
     Margin: 0;
-    Padding: 0;
+
 }
 
 /*Background-img for entire website + font*/
@@ -37,7 +37,7 @@ footer {
 }
 
 header>h1 {
-    font-family: 'Bungee Outline';
+    font-family: 'Bungee Shade';
     color: #ffebd2;
     text-shadow: 20px 10px 10px black;
     line-height: 0.6;
@@ -48,7 +48,7 @@ nav {
     display: flex;
     margin: 5vw 0;
     justify-content: space-between;
-    text-shadow: 20px 10px 10px #185a70;
+
 }
 
 nav>div {
@@ -75,6 +75,7 @@ nav>.unmarked:hover {
     color: #185a70;
     border: solid 1px white;
     font-weight: bold;
+    box-shadow: 1px 1px 5px 2px white;
 
 }
 
@@ -87,26 +88,45 @@ nav>.unmarked:hover {
     padding: 2vw;
     margin-bottom: 1vw;
 
+
+}
+
+.album_description {
+    margin-top: 5vh;
 }
 
 .album_data {
     grid-row: 1 /span 3;
     grid-column: 1 / span 3;
-    color: #ffebd2;
+    color: white;
     padding-right: 1vw;
+    margin-left: 1vw;
 }
 
-.album_data h1 {
-    font-family: 'Bungee Shade';
+#enema_of_the_state h1 {
+    font-family: 'Bungee Outline';
     line-height: 0.7;
     font-size: 250%;
 }
 
-.album_data h2 {
+#enema_of_the_state h2 {
     font-family: 'Barlow Semi Condensed';
-    color: #185a70;
     padding: 2vw 0;
     font-size: 200%;
+}
+
+#blink_182 h1 {
+    font-family: 'Bungee Outline';
+    line-height: 0.7;
+    font-size: 220%;
+    color: #76c7ba;
+}
+
+#blink_182 h2 {
+    font-family: 'Barlow Semi Condensed';
+    color: #f52586;
+    padding: 2vw 0;
+    font-size: 180%;
 }
 
 .cover {
@@ -122,17 +142,21 @@ nav>.unmarked:hover {
     border-radius: 20px 20px 0 0;
     transition-property: opacity;
     transition-duration: 1s;
+
+
 }
 
 .show_hover {
     width: 100%;
     border-radius: 20px 20px 0 0;
+
 }
 
 .show_not_hover:hover {
     opacity: 0;
     transition-property: opacity;
     transition-duration: 1s;
+
 
 }
 
@@ -143,7 +167,7 @@ nav>.unmarked:hover {
 
 }
 
-.song_list>div {
+#enema_of_the_state .song_list>div {
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -153,10 +177,21 @@ nav>.unmarked:hover {
 
 }
 
+#blink_182 .song_list>div {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: #76c7ba;
+    color: #f52586;
+    margin-top: 0.5vw;
+}
+
+
 .song_list>div>ul {
     list-style: decimal;
     margin-top: 0;
-    margin-left: 2.3vw;
+    padding-left: 2vw;
+    padding-bottom: 2vw;
 }
 
 .song_list>div>h2 {
@@ -178,7 +213,7 @@ nav>.unmarked:hover {
     display: flex;
     grid-column: 1 / span 5;
     list-style: none;
-    color: #ffebd2;
+    color: #187ebb;
     gap: 1%;
     margin-top: 1vw;
     margin-bottom: 0;
@@ -186,11 +221,12 @@ nav>.unmarked:hover {
 
 }
 
+/* första albumet layout */
 #enema_of_the_state .box {
     display: flex;
     align-items: center;
     height: 20vw;
-    background-color: #185a70;
+    background-color: #fafafa;
     padding: 1vw;
 
 }
@@ -231,4 +267,87 @@ nav>.unmarked:hover {
 #enema_of_the_state .bottom_right_90 {
     width: 20%;
     border-radius: 20px 20px 0 20px;
+}
+
+
+
+/* andra albumet layout */
+#blink_182 .box {
+    display: flex;
+    align-items: center;
+    height: 20vw;
+    background-color: #f52586;
+    padding: 1vw;
+    color: #76c7ba;
+
+}
+
+#blink_182 .box_two {
+    display: flex;
+    align-items: flex-end;
+    background-image: url(./images/album2.endpic.avif);
+    background-size: cover;
+    background-position: center;
+    color: white;
+    font-style: italic;
+    font-weight: bold;
+    border-radius: 0 20px 20px 20px;
+    padding-bottom: 3vw;
+}
+
+#blink_182 .bottom_left_90 {
+    width: 35%;
+    border-radius: 20px 20px 20px 0px;
+}
+
+#blink_182 .top_left_90 {
+    width: 20%;
+    border-radius: 20px 0px 20px 20px;
+}
+
+#blink_182 .image {
+    width: 35%;
+}
+
+#blink_182 .bottom_right_90 {
+    width: 20%;
+    border-radius: 20px 20px 0px 20px;
+}
+
+#blink_182 .tablet_empty {
+    display: none;
+}
+
+#blink_182 .phone_empty {
+    display: none;
+}
+
+footer {
+    color: #ffebd2;
+    padding-top: 80px;
+
+}
+
+/* desktop view */
+@media (min-width: 1111px) {
+    header>h1 {
+        font-size: 100px;
+    }
+
+    .album_data h1,
+    .album_data h2 {
+        font-size: 4vw;
+    }
+
+    nav>div {
+        font-size: 2vw;
+    }
+
+    p,
+    h2,
+    ul,
+    footer {
+        font-size: 1vw;
+    }
+
 }
