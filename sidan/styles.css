@@ -328,15 +328,48 @@ footer {
 
 }
 
-/* desktop view */
+/* desktop view  fixed font sizes*/
 @media (min-width: 1111px) {
     header>h1 {
         font-size: 100px;
     }
 
-    .album_data h1,
-    .album_data h2 {
-        font-size: 4vw;
+    #enema_of_the_state .album_data h1,
+    #enema_of_the_state .album_data h2 {
+        font-size: 40px;
+    }
+
+    #blink_182 .album_data h1,
+    #blink_182 .album_data h2 {
+        font-size: 40px;
+    }
+
+    nav>div {
+        font-size: 25px;
+    }
+
+    p,
+    h2,
+    ul,
+    footer {
+        font-size: 20px;
+    }
+
+}
+
+@media (max-width: 1111px) and (min-width: 900px) {
+    header>h1 {
+        font-size: 9vw;
+    }
+
+    #enema_of_the_state .album_data h1,
+    #enema_of_the_state .album_data h2 {
+        font-size: 3vw;
+    }
+
+    #blink_182 .album_data h1,
+    #blink_182 .album_data h2 {
+        font-size: 3vw;
     }
 
     nav>div {
@@ -347,7 +380,231 @@ footer {
     h2,
     ul,
     footer {
-        font-size: 1vw;
+        font-size: 1.5vw;
     }
 
+}
+
+@media (max-width: 900px) and (min-width: 800px) {
+    header>h1 {
+        font-size: 80px;
+    }
+
+    #enema_of_the_state .album_data h1,
+    #enema_of_the_state .album_data h2 {
+        font-size: 27px;
+    }
+
+    #blink_182 .album_data h1,
+    #blink_182 .album_data h2 {
+        font-size: 20px;
+    }
+
+    nav>div {
+        font-size: 15px;
+    }
+
+    p,
+    h2,
+    ul,
+    footer {
+        font-size: 12px;
+    }
+}
+
+/*tablet mode*/
+@media (max-width:800px) and (min-width: 500px) {
+    header>h1 {
+        text-align: center;
+        font-size: 9vw;
+    }
+
+    #enema_of_the_state .album_data h1,
+    #enema_of_the_state .album_data h2 {
+        font-size: 3vw;
+    }
+
+    #blink_182 .album_data h1,
+    #blink_182 .album_data h2 {
+        font-size: 2.3vw;
+    }
+
+    nav>div {
+        font-size: 3vw;
+    }
+
+
+    p,
+    h2,
+    ul,
+    footer {
+        font-size: 2vw;
+    }
+
+    .best {
+        grid-template-columns: repeat(10, 1fr);
+    }
+
+    .cover {
+        grid-column: 1 /span 6;
+        border-radius: 20px 0 0 20px;
+    }
+
+    #enema_of_the_state .cover {
+        background-color: #187ebb;
+        margin-top: 0.5vw;
+    }
+
+    #blink_182 .cover {
+        background-color: #76c7ba;
+        margin-top: 0.5vw;
+    }
+
+    .show_hover {
+        display: none;
+    }
+
+    .show_not_hover {
+        border-radius: 20px 0 0 20px;
+    }
+
+    .show_not_hover:hover {
+        opacity: 1;
+    }
+
+    .song_list {
+        flex-direction: column;
+        grid-column: 7/span4;
+        margin-left: 1.5vw;
+    }
+
+    .song_list>div:nth-child(1) {
+        border-radius: 0px 20px 0px 0px;
+        margin-top: 0;
+        padding-bottom: 2vw;
+
+    }
+
+    .song_list>div:nth-child(2) {
+        border-radius: 0px 0px 20px 0px;
+        padding-bottom: 2vw;
+
+    }
+
+    .album_data {
+        grid-column: 1 / span 10;
+        grid-row: 2;
+        margin-top: 4vw;
+    }
+
+    .anecdotes {
+        grid-column: 1 / span 10;
+        flex-wrap: wrap;
+    }
+
+    /*Enema of the state*/
+    #enema_of_the_state .top_right_90 {
+        order: 1;
+        width: 25%;
+    }
+
+    #enema_of_the_state .empty {
+        order: 2;
+        width: 25%;
+    }
+
+    #enema_of_the_state .bottom_left_90 {
+        order: 3;
+        width: 47%;
+    }
+
+    #enema_of_the_state .tablet_empty_1 {
+        order: 4;
+        width: 25%;
+        display: inline;
+    }
+
+    #enema_of_the_state .image {
+        order: 5;
+        width: 25%;
+    }
+
+    #enema_of_the_state .bottom_right_90 {
+        order: 6;
+        width: 23%;
+    }
+
+    #enema_of_the_state .phone_empty_1 {
+        order: 7;
+        width: 23%;
+        display: inline;
+    }
+
+    /*Untitled*/
+    #blink_182 .bottom_left_90 {
+        order: 1;
+        width: 45%;
+        display: inline;
+        overflow: scroll;
+    }
+
+    #blink_182 .top_left_90 {
+        order: 2;
+        width: 25%;
+    }
+
+    #blink_182 .tablet_empty_2 {
+        order: 3;
+        width: 25%;
+        display: inline;
+    }
+
+    #blink_182 .phone_empty_2 {
+        order: 4;
+        width: 25%;
+        display: inline;
+    }
+
+    #blink_182 .image {
+        order: 5;
+        width: 45%;
+    }
+
+    #blink_182 .bottom_right_90 {
+        order: 6;
+        width: 25%;
+    }
+}
+
+/*Phone mode*/
+@media (max-width: 500px) {
+    .background {
+        width: 100vw;
+        margin: 0;
+    }
+
+    header>h1 {
+        font-size: 9vw;
+        text-align: center;
+        margin-top: 3vw;
+    }
+
+    .best {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    nav>div {
+        font-size: 3vw;
+    }
+
+    /*edit this*/
+    #enema_of_the_state .album_data h1,
+    #enema_of_the_state .album_data h2 {
+        font-size: 5vw;
+    }
+
+    #blink_182 .album_data h1,
+    #blink_182 .album_data h2 {
+        font-size: 4vw;
+    }
 }
