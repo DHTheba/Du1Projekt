@@ -422,6 +422,13 @@ footer {
         font-size: 9vw;
     }
 
+    body {
+        background-image: url(images/background/background_tablet.png);
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: center;
+    }
+
     #enema_of_the_state .album_data h1,
     #enema_of_the_state .album_data h2 {
         font-size: 3vw;
@@ -477,7 +484,7 @@ footer {
 
     .song_list {
         flex-direction: column;
-        grid-column: 7/span4;
+        grid-column: 7/span 4;
         margin-left: 1.5vw;
     }
 
@@ -585,6 +592,13 @@ footer {
         width: 100vw;
         margin: 0;
         border-radius: 0;
+    }
+
+    body {
+        background-image: url(images/background/background_phone.jpg);
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: center;
     }
 
     header>h1 {
